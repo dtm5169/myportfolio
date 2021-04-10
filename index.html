@@ -2,102 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <title>Daisha Marrow Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="brand-title"> Daisha Marrow</div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li>
-                    <a href="#about"> About Me </a>
-                 </li>
-                <li>
-                    <a href="#pj">Work</a>
-                </li>
-                <li>
-                    <a href="#contact"> Contact Me </a>
-                </li>
-                <li>
-                    <a href="#">Resume</a>
-                </li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <h1>Welcome</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#jumbotron">My Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </div>
- 
-    <!--Main Photo-->
-    <div>
-         <div id=white>
-            <img src="header.jpg" class="pic"> 
+      </nav>
+      <header class="page-header">
+          <div class="container pt-3">
+              <div class="row align-items-center justify-content-center">
+                  <div class="col-md-5 header-text">
+                      <h2>Hi! I'm Daisha Marrow</h2>
+                      <p>Current student at GW University Coding Bootcamp, dedicated to the growth and development of my web-development skills. </p>
+                      <a href="https://www.linkedin.com/in/daisha-marrow-97017294/">
+                      <button type="button" class="btn btn-outline-success btn-lg">My linkedin </button></a>
+                     
+                  </div>
+                  <div class="col-md-5">
+                      <img class="header-jpg" src="header.jpg" alt="img">
+                  </div>
+              </div>
+          </div>
+      </header>
+    <!--my work-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">My Work</h1>
+          <p class="lead">Listed below are project I recently completed</p>
         </div>
-        <h2>I'm Daisha</h2> <br>
-    </div><br>
-    <!-- About Me Section-->
-    <div class="flex-container-1">
-        <div id="section">
-            <ul>
-                <li><span class="float-right"><p>About<br>Me</p></span>
-                </li>
-            </ul>
+      </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3>My Wallet</h2>
+                <a href="https://github.com/dtm5169/my-wallet"><img src="wallet.png"/></a>
+          </div>
+          <div class="col-sm">
+            <h3>Code Quiz</h2>
+                <a href="https://github.com/dtm5169/CodeQuiz"><img src="codequiz.png"/></a>
+          </div>
+          <div class="col-sm text-centered ">
+            <h3>Password Generator</h2>
+                <a href="https://github.com/dtm5169/PasswordGenerator"><img src="password.png"/></a>
+          </div>
         </div>
-        <div id="About-Me" class="about">
-            <p id="about">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione optio numquam unde. Aperiam praesentium illum recusandae officiis expedita dolorum vero cupiditate culpa eius fuga, veniam aliquid aspernatur, maxime molestias at. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vero. Amet consequuntur dolorem, totam recusandae ratione sequi quae voluptatem eius magnam eveniet quo obcaecati similique quod iste placeat voluptate laboriosam.<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sint totam laboriosam eum veniam. Ad suscipit, repudiandae consectetur eveniet nostrum ullam! Corporis laborum aperiam harum, accusantium tenetur debitis quia natus?
-            </p>
-        </div>
-    </div> <br>
-    <!--Work Section-->
-    <div class="flex-container-2">
-            <div id="section">
-                <ul>
-                    <li><span class="float-right"><p>Work</p></span>
-                    </li>
-                </ul>
-            </div>
-            <div id="Work">
-                <div class="project-container" id="pj"> 
-                    <div id=border1>
-                        <div class="main" style="height: 600px"> 
-                        <a href="https://github.com/dtm5169"><img src="Servers.jpg" class="fade img-size1"> </div></a>
-                        <div class="project-text1"><b>HTML/CSS</b></div>
-                    </div>
-                    <div id=border2>
-                        <div class="small" style="height: 200px"> 
-                            <a href="https://github.com/dtm5169"><img src="Cloud.jpg" class="fade img-size2"> </div></a>
-                        <div class="project-text2"><b>JavaScipt</b></div>
-                    </div>
-                    <div id=border2>
-                        <div class="small" style="height: 200px"> 
-                            <a href="https://github.com/dtm5169"><img src="Data.jpg" class="fade img-size2"> </div></a>
-                        <div class="project-text2"><b>Ruby</b></div>
-                    </div>
-                    <div id=border2>
-                        <div class="small" style="height: 200px"> 
-                            <a href="https://github.com/dtm5169"><img src="Network.jpeg" class="fade img-size2"> </div></a>
-                        <div class="project-text2"><b>C++</b></div>
-                    </div>
-                    <div id=border2>
-                        <div class="small" style="height: 200px"> 
-                            <a href="https://github.com/dtm5169"><img src="Blockchain.jpg" class="fade img-size2"> </div></a>
-                        <div class="project-text2"><b>Python</b></div>
-                    </div>
-                </div>
-            </div>
-    </div> <br>
-    <!--Contact Me-->
+      </div>
+      <!--Contact Me-->
     <div class="flex-container-3">
-        <div id="section">
-            <ul>
-                <li><span class="float-right"><p>Contact<br>Me</p></span>
-                </li>
-            </ul>
-        </div>
         <div id="Contact-Me">
                 <ul>
                     <li id="contact"><b>Phone</b> &nbsp;| &nbsp; 215-290-xxxx</li>
@@ -108,9 +85,6 @@
             </div>        
         </div>
     </div> 
-
-    
-    
  
 </body>
 
